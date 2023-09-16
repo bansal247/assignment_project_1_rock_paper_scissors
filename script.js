@@ -115,9 +115,7 @@ function HideElements(){
 }
 
 NextButton.addEventListener('click',()=>{
-    HideElements();
     window.location.href = 'hurray.html';
-    
 })
 
 PlayAgainButton.addEventListener('click',()=>{
