@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="score-box">
+            <div id="left">
+                <p>rock</p>
+                <p>paper</p> 
+                <p>scissors</p>
+            </div>
+            <div id="right">
+                <div class="score-area">
+                    <p class="tag">computer score</p>
+                    <p id="computer-score" class="score">0</p>
+                </div>
+                <div class="score-area">
+                    <p class="tag">your score</p>
+                    <p id="your-score" class="score">0</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="main-game">
+            <div id="lines">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <div id = "playing"  class="play-area">
+                <div id="rock-button" class="clikable-item rock">
+                    <img src="static/rock.png" alt="rock" srcset="">
+                </div>
+                <div id="paper-button" class="clikable-item paper">
+                    <img src="static/paper.png" alt="paper" srcset="">
+                </div>
+                <div id="scissors-button" class="clikable-item scissors">
+                    <img src="static/scissors.png" alt="scissors" srcset="">
+                </div>
+            </div>
+            
+        </div>
+        <div id='played' class="play-area">
+            <div class="picking">
+                <p>You picked</p>
+                <div class="">
+                    <div id="your-option" class="non-clikable-item">
+                        <!-- <img src="static/rock.png" alt="rock" srcset=""> -->
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div id="information">
+                <div id="won-title">
+                    <!-- you win -->
+                </div>
+                <div id="against">
+                    <!-- against pc -->
+                </div>
+                <button id="play-again" class="button-white play-again">
+                    <!-- play again -->
+                </button>
+            </div>
+            <div class="picking">
+                <p>pc picked</p>
+                <div class="">
+                    
+                    <div id="pc-option" class="non-clikable-item">
+                        <!-- <img src="static/rock.png" alt="rock" srcset=""> -->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="rules-area">
+            <button class="rules-area-close-button">X</button>
+            <div class="rules">
+                <div class="rules-heading">
+                    Game Rules
+                </div>
+                <div class="rules-items">
+                    <ul>
+                        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                        <li>If both players lay down the same hand, each player lays down another hand</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rules-buttons">
+            <button class="button-transparent rules-button"> rules </button>
+            <button id="next-button" class="button-transparent hide">next</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

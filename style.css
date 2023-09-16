@@ -1,0 +1,524 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Roboto&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #89C15E;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+
+.button-transparent{
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background: none;
+    color: #FFFFFF;
+    width: 120px;
+    height: 45px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    
+    
+}
+
+.button-transparent:hover{
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #6B6B6B;
+    transition-duration: 0.5s;
+}
+
+.button-white{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: #6B6B6B;
+    text-transform: uppercase;
+    border-radius: 9px;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    border-color: #FFFFFF;
+    
+}
+
+.button-white:hover{
+    color: white ;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #FFFFFF;
+    transition-duration: 0.5s;
+}
+
+.clikable-item{
+    display: flex;
+    border: 16px solid;
+    background-color: #FFFFFF;
+    box-shadow: 3px 0px 21px 1px #00000033 inset;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.clikable-item:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border-width: 10px;
+    width: 132px;
+    height: 132px;
+}
+
+.clikable-item > img{
+    width: 50%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#information{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 2vh;
+}
+
+
+
+#information > #against{
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+
+#information > #won-title{
+    font-size: 39px;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+}
+
+
+
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#left > p{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    text-align: left;
+
+}
+
+.line{
+    /* display: none; */
+    width: 260px;
+    height: 0px;
+    border: 7px solid #000000a3;
+}
+
+.line-1{
+    position: relative;
+    top: 90px;
+    left: 130px;
+    z-index: -1;
+}
+
+.line-2{
+    position: relative;
+    top: 200px;
+    left: 60px;
+    z-index: -1;
+    rotate: 60deg;
+}
+
+.line-3{
+    position: relative;
+    top: 185px;
+    left: 200px;
+    z-index: -1;
+    rotate: 120deg;
+}
+
+main{
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-game{
+    display: block;
+}
+
+.non-clikable-item{
+    display: flex;
+    border: 16px solid;
+    background-color: #FFFFFF;
+    box-shadow: 3px 0px 21px 1px #00000033 inset;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.non-winner{
+    margin-top: 30px;
+}
+
+.picking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picking > p{
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#playing{
+    width: 550px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px 0px;
+    /* display: none; */
+}
+
+
+#played{
+    display: none;
+    flex-direction: row;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#right{
+    display: flex;
+    gap: 2vw;
+    
+}
+
+.score{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #252525;
+    margin: 0;
+    padding: 0;
+}
+
+.score-area{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 12px;
+    width: 7em;
+    height: 7em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#score-box{
+    display: flex;
+    border-radius: 12px;
+    border: 2px solid #FFFFFF;
+    padding: 2vh 1vw;
+    justify-content: space-between;
+    align-items: center;
+    width: 57vw;
+    height: 130px;
+}
+
+
+.tag{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #656565;
+    padding: 0;
+    margin: 0;
+}
+
+.winner{
+    border: 30px solid #279b27;
+    box-shadow: 0 0 0 20px #1da82b;
+    outline: 40px solid #2E9A2563;
+    border-radius: 50%;
+}
+
+/* ------------------ROCK PAPER SCISSORS------------------ */
+
+
+.rock{
+    justify-self: center;
+    border-color: #0074B6;
+    border-radius: 50%;
+}
+.scissors{
+
+    border-color: #BD00FF;
+    border-radius: 50%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    
+}
+.paper{
+    justify-self: center;
+    border-color: #FFA943;
+    border-radius: 50%;
+}
+
+.scissors  > img{
+    width: 35%;
+}
+
+.rock.clikable-item  > img:hover{
+    width: 60%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.paper.clikable-item  > img:hover{
+    width: 60%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.scissors.clikable-item  > img:hover{
+    width: 40%;
+    cursor: pointer;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    transition-duration: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------footer---------------------------*/
+footer{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30vw;
+    gap: 3vh;
+    z-index: 10;
+}
+
+
+
+li{
+    margin: 15px 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-transform: none;
+}
+
+.rules-area{
+    position: relative;
+    z-index: 5;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.animate{
+    transition: transform 0.5s ease;
+    transform: translateX(-10%);
+}
+
+
+
+
+.rules-area > button{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #FFFFFF;
+    background-color: #ff0000;
+    border-radius: 50%;
+    font-family: Dangrek;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 79px;
+    letter-spacing: 0em;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left:20px;
+    top:30px;
+    transition-duration: 0.5s;
+}
+
+.rules-area > button:hover{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #FFFFFF;
+    background-color: #880000;
+}
+
+.rules{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    background: #004429;
+    border: 7px solid #FFFFFF;
+    border-radius: 13px;
+    padding: 20px;
+}
+
+
+
+.rules-buttons{
+    display: flex;
+    gap: 2vw;
+}
+.rules-buttons > .button{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-align: left;
+
+}
+
+
+.rules-heading{
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ul li::before {
+    content: "\25AA";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #FFD600;
+    font-size: 30px;
+
+    
+}
+
+
+
+
+/*-------------------hurray.html---------------------------*/
+#hurray{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+#hurray-main{
+    margin: 0;
+}
+#hurray > button{
+    margin: 30px 0px 0px 0px;
+}
+
+#hurray > #heading{
+    font-size: 91px;
+    font-weight: 600;
+    line-height: 107px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+#hurray > #info{
+    font-size: 41px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+#hurray > img{
+    background-image: url("static/tophie.png");
+    background-repeat: no-repeat;
+    background-position:bottom;
+}
+
+
+.hide{
+    display: none;
+}
